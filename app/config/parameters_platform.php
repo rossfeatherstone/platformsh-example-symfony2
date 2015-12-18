@@ -19,6 +19,3 @@ foreach ($relationships['database'] as $endpoint) {
     $container->setParameter('database_password', $endpoint['password']);
     $container->setParameter('database_path', '');
 }
-
-# Store session into /tmp.
-ini_set('session.save_path', '/tmp/sessions');
